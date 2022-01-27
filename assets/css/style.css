@@ -75,7 +75,8 @@ body {
     border-color: #777;
 }
 
-.formdesign.success input {
+
+/* .formdesign.success input {
     border-color: rgb(15, 209, 15);
 }
 
@@ -87,7 +88,6 @@ body {
     position: absolute;
     right: 12px;
     top: 38px;
-    visibility: hidden;
 }
 
 .formdesign.success i.fa-solid .fa-circle-check {
@@ -105,10 +105,7 @@ body {
     bottom: 0;
     left: 0;
 }
-
-.formdesign.error small {
-    visibility: visible;
-}
+*/
 
 .sub-btn {
     font-family: var(--btn-font);
