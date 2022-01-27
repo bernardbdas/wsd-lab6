@@ -1,5 +1,11 @@
-body {
+:root body {
+    background-image: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159, 172, 230, 0.6));
     padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
 }
 
 .formdesign {
@@ -20,7 +26,7 @@ body {
     color: red;
 }
 
-.but {
+.sub-btn {
     border-radius: 9px;
     width: 100px;
     height: 50px;

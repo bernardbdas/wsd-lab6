@@ -6,37 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="assets/script/script.js"></script>
     <title>wsd lab 6</title>
 </head>
 
 <body>
-    <h1>Welcome to the best form on Internet!</h1>
-    <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
-
-        <div class="formdesign" id="name">
-            Name: <input type="text" name="fname" required><span class="formerror"> </span>
+    <div class="container">
+        <div class="header">
+            <h1>WSD Lab 6 - Form Validation Using Regular Expression</h1>
         </div>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+            <div class="formdesign">
+                <label>User Name : </label>
+                <input type="text" name="" id="username" placeholder=" enter your username" required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-diamond-exclamation"></i>
+                <span class="formerror"> </span>
+            </div>
 
-        <div class="formdesign" id="email">
-            Email: <input type="email" name="femail" required><span class="formerror"> </span>
-        </div>
+            <div class="formdesign">
+                <label>Email : </label>
+                <input type="email" name="" id="email" placeholder="enter your email" required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-diamond-exclamation"></i>
+                <span class=" formerror"> </span>
+            </div>
 
-        <div class="formdesign" id="phone">
-            Phone: <input type="phone" name="fphone" required><span class="formerror"></span>
-        </div>
+            <div class="formdesign">
+                <label>Phone : </label>
+                <input type="phone" name="" id="contact" placeholder="enter your phone no." required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-diamond-exclamation"></i>
+                <span class="formerror"></span>
+            </div>
 
-        <div class="formdesign" id="pass">
-            Password: <input type="password" name="fpass" required><span class="formerror"></span>
-        </div>
+            <div class="formdesign">
+                <label>Password : </label>
+                <input type="password" name="" id="pass" placeholder="enter your password" required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-diamond-exclamation"></i>
+                <span class="formerror"></span>
+            </div>
 
-        <div class="formdesign" id="cpass">
-            Confirm Password: <input type="password" name="fcpass" required><span class="formerror"></span>
-        </div>
+            <div class="formdesign">
+                <label>Confirm Password : </label>
+                <input type=" password" name="" id="cfpass" laceholder="renter your password" required>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-diamond-exclamation"></i>
+                <span class="formerror"></span>
+            </div>
 
-        <input class="but" type="submit" value="Submit">
-
-    </form>
+            <input class="sub-btn" type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 
 </html>
