@@ -22,7 +22,7 @@ uname.onkeydown = function() {
         span[0].innerText = "username cannot be blank";
         span[0].style.color = "red";
     } else
-    if (unameVal.length <= 2) {
+    if (unameVal.length < 3) {
         span[0].innerText = "username must contain atleast 3 characters";
         span[0].style.color = "red";
     } else
@@ -68,6 +68,9 @@ pass.onkeydown = function() {
     if (validPass1.test(passVal) && validPass2.test(passVal)) {
         span[0].innerText = "Strong Password";
         span[0].style.color = "lime";
+    } else if (passVal === "") {
+        span[0].innerText = "Password cannot remain Blank"
+        span[0].style.color = "red"
     } else {
         span[0].innerText = "Weak Password";
         span[0].style.color = "red";
@@ -79,6 +82,9 @@ cpass.onkeydown = function() {
     if (cpassVal === passVal) {
         span[0].innerText = "Passwords match";
         span[0].style.color = "lime";
+    } else if (cpassVal === "") {
+        span[0].innerText = "Password cannot remain Blank"
+        span[0].style.color = "red"
     } else {
         span[0].innerText = "Passwords do not match";
         span[0].style.color = "lime";
